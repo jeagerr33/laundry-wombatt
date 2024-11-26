@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Transaksi</title>
+    <link rel="stylesheet" href="TransaksiLaporanStyle.css">
+</head>
+
+<body>
+    <h1>Laporan Transaksi</h1>
+
+    <form id="searchForm">
+        <label for="startDate">Dari Tanggal:</label>
+        <input type="date" id="startDate" required>
+
+        <label for="endDate">Sampai Tanggal:</label>
+        <input type="date" id="endDate" required>
+
+        <button type="button" onclick="filterTransactions()">Cari</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tanggal</th>
+                <th>Waktu Mulai</th>
+                <th>Waktu Selesai</th>
+                <th>Nama Pelanggan</th>
+                <th>Nama Mesin Cuci</th>
+                <th>Total Waktu (Menit)</th>
+                <th>Total Biaya (Rp)</th>
+            </tr>
+        </thead>
+        <tbody id="transactionList">
+            <!-- Data akan diisi oleh JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="TransaksiLaporanScript.js"></script>
+</body>
+
+</html>
