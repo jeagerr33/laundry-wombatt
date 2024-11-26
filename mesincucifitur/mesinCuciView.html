@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Mesin Cuci</title>
+    <link rel="stylesheet" href="/mesinCuciStuff/mesinCuciStuff.css">
+    <script src="/mesinCuciStuff/script.js" defer></script>
+</head>
+<body>
+    <h1>Daftar Mesin Cuci</h1>
+    <button class="add-button" onclick="openModalForAdd()">Tambah Mesin Cuci</button>
+    <input type="text" id="searchBox" placeholder="Cari mesin cuci..." />
+    <button onclick="searchMachine()">Cari</button>
+    <p id="noResultsMessage" style="display: none; color: red;">Tidak ada hasil yang ditemukan.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama Mesin Cuci</th>
+                <th>Kapasitas</th>
+                <th>Status</th>
+                <th>Merek</th>
+                <th>Harga (per 15 menit)</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="machine : ${mesinCuciList}">
+                <td th:text="${machine['nama']}"></td>
+                <td th:text="${machine['kapasitas']} + ' Kg'"></td>
+                <td th:text="${machine['status']}"></td>
+                <td th:text="${machine['merek']}"></td>
+                <td th:text="${machine['harga_per_15_menit']}"></td>
+                <td>
+                    <button class="edit-button" data-nama="${machine['nama']}">Edit</button>
+                    <button class="delete-button" data-nama="${machine['nama']}">Hapus</button>
+                </td>
+            </tr>
+        </tbody>        
+        
+    </table>
+</body>
+</html>
+
