@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Pelanggan</title>
+    <link rel="stylesheet" href="PelangganLaundryStyle.css">
+</head>
+
+<body>
+    <h1>Daftar Pelanggan</h1>
+
+    <!-- Tombol Tambah Pelanggan -->
+    <button class="add-button" onclick="openAddModal()">Tambah Pelanggan</button>
+
+    <!-- Tabel Pelanggan -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nomor Pelanggan</th>
+                <th>Nama</th>
+                <th>Nomor HP</th>
+                <th>Kelurahan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="customer-list">
+            <!-- Data akan diisi oleh JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- Modal Tambah/Edit Pelanggan -->
+    <div class="modal" id="addModal">
+        <div class="modal-content">
+            <div class="modal-header">Tambah Pelanggan</div>
+            <form id="addForm">
+                <input type="text" id="addName" placeholder="Nama Pelanggan" required />
+                <input type="text" id="addPhone" placeholder="Nomor HP" required />
+                <select id="addArea" required>
+                    <option value="">Pilih Kelurahan</option>
+                    <option value="Gegerkalong">Gegerkalong</option>
+                    <option value="Sukasari">Sukasari</option>
+                    <option value="Cimahi">Cimahi</option>
+                </select>
+            </form>
+            <div class="modal-footer">
+                <button class="close-button" onclick="closeModal()">Tutup</button>
+                <button class="save-button" onclick="addCustomer()">Tambah</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="PelangganLaundryScript.js"></script>
+</body>
+
+</html>
