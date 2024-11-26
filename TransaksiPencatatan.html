@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencatatan Transaksi</title>
+    <link rel="stylesheet" href="TransaksiPencatatanStyle.css">
+</head>
+
+<body>
+    <h1>Pencatatan Transaksi</h1>
+
+    <form id="transactionForm">
+        <label for="transactionDate">Tanggal Transaksi:</label>
+        <input type="date" id="transactionDate" required>
+
+        <label for="startTime">Waktu Mulai:</label>
+        <input type="time" id="startTime" required>
+
+        <label for="endTime">Waktu Selesai:</label>
+        <input type="time" id="endTime" required>
+
+        <label for="customerName">Nama Pelanggan:</label>
+        <input type="text" id="customerName" placeholder="Masukkan Nama Pelanggan" required>
+
+        <label for="machine">Mesin Cuci (available):</label>
+        <select id="machine" required>
+            <option value="LG TurboWash">LG TurboWash</option>
+            <option value="Samsung EcoBubble">Samsung EcoBubble</option>
+            <option value="Panasonic SmartWash">Panasonic SmartWash</option>
+            <option value="Electrolux UltraCare">Electrolux UltraCare</option>
+        </select>
+
+        <button type="button" onclick="addTransaction()">Tambah Transaksi</button>
+    </form>
+
+    <a href="TransaksiLaporan.html">Lihat Laporan Transaksi</a>
+
+    <script src="TransaksiPencatatanScript.js"></script>
+</body>
+
+</html>
