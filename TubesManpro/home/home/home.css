@@ -1,0 +1,156 @@
+/* Reset styles */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Biru muda lembut */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-start; /* Pastikan header tetap di atas */
+}
+
+.btn-gray {
+    display: inline-block; /* Membuat elemen seperti tombol */
+    padding: 10px 20px; /* Spasi dalam tombol */
+    background-color: #ccc; /* Warna latar abu-abu */
+    color: #000; /* Warna teks hitam */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border: none;
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.btn-blue {
+    display: inline-block; /* Membuat elemen seperti tombol */
+    padding: 10px 20px; /* Spasi dalam tombol */
+    background-color: #ccc; /* Warna latar abu-abu */
+    color: #000; /* Warna teks hitam */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border: none;
+    border-radius: 5px; /* Membulatkan sudut tombol */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Header (Blackbar) styling */
+.black-bar {
+    background-color: #2c3e50;
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Menyusun konten secara horizontal di tengah */
+    align-items: center; /* Menyusun konten secara vertikal di tengah */
+    padding: 15px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.wombat-icon {
+    width: 60px; /* Ukuran ikon wombat */
+    height: auto;
+}
+
+
+.black-bar h1 {
+    font-size: 3rem;
+}
+
+/* Main container styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertikal tengah */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Kotak putih di tengah */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Lebar kotak */
+    max-width: 500px; /* Maksimal lebar */
+    margin: 50px auto; /* Margin otomatis, dengan penyesuaian jarak */
+    height: 50vh; /* Memberikan tinggi untuk posisi vertikal lebih tepat */
+}
+
+/* Welcome container styling */
+.welcome-container {
+    margin-bottom: 30px;
+}
+
+.welcome-container h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.welcome-container p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Option styling for each button with icon */
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-icon {
+    width: 80px; /* Ukuran gambar */
+    height: auto;
+}
+
+/* Buttons styling */
+button {
+    font-size: 1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+.btn-gray {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-gray:hover {
+    background-color: #495057;
+}
